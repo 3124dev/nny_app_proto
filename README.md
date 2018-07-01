@@ -1,5 +1,8 @@
 # nny_webapp_proto
 
+You can preview this app on
+https://vj8vl0vrl.codesandbox.io/
+
 This is the prototype of NNY_web application.
 I inform you that it is still on my work.
 
