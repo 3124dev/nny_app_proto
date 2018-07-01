@@ -1,0 +1,120 @@
+.app-bar-menu {
+  height: 48px;
+}
+.app-bar-menu>.menu-icon {
+  width: 24px;
+  height: 24px;
+  padding: 12px 12px 12px 16px;
+  cursor: pointer;
+}
+.menu-icon>svg {
+  fill: #FFA000; /*amber 700*/
+}
+.current-nav {
+  position: absolute;
+  height: 18px;
+  line-height: 16px;
+  padding: 16px 0;
+  top: 0;
+  left: calc(50% - 48px);
+  width: 96px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #616161; /*grey 700*/
+}
+
+
+#menu-sidenav.sideopen {
+  width: 250px;
+}
+#menu-sidenav.sideclose {
+  width: 0px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #FAFAFA; /*grey 50*/
+  overflow-x: hidden;
+  padding-top: 8px;
+  transition: 0.5s;
+}
+  .closebtn { cursor: pointer; }
+  .sidenav a.closebtn { font-size: 25px; padding: 8px 8px 8px 32px; background-image: none; }
+  .sidenav a {
+    height: 32px;
+    line-height: 32px;
+    padding: 8px 8px 8px 80px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #424242; /*grey 800*/
+    display: block;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: 32px 12px;
+  }
+  .sidenav a[href^="/home"] {
+    background-image: url("https://uploads.codesandbox.io/uploads/user/191fe0d6-4122-481d-8cff-755c18cc455e/2Zas-home.svg");
+  }
+  .sidenav a[href^="/class"] {
+    background-image: url("https://uploads.codesandbox.io/uploads/user/191fe0d6-4122-481d-8cff-755c18cc455e/D2ga-class.svg"); 
+  }
+  .sidenav a[href^="/manage"] {
+    background-image: url("https://uploads.codesandbox.io/uploads/user/191fe0d6-4122-481d-8cff-755c18cc455e/5mcO-manage.svg"); 
+  }
+  .sidenav a[href^="/account"] {
+    background-image: none; 
+  }
+  .sidenav a:hover { color: #212121; }
+  .setbtns {
+    bottom: 30px;
+    position: fixed;
+    overflow: hidden;
+  }
+  .setbtns a { 
+    width: 24px; 
+    height: 24px;
+    padding: 12px 12px 12px 32px;
+  }
+
+.overlay {
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.overlay.sideopen {
+  width: 100%;
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+.overlay.sideclose {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0.3s, width 0.3s 0.2s;
+}
+.setbtns.sideopen {
+  width: 250px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.setbtns.sideclose {
+  width: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay.sideopen { width: 100%; opacity: 0.5; }
+}

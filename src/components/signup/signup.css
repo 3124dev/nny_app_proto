@@ -1,0 +1,345 @@
+#signup {
+  background-color: #F5F5F5;
+}
+.signup-form {
+  background-color: #fff;
+  max-width: 640px;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.signup-form>h1 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5em;
+  letter-spacing: -2px;
+  padding: 72px 0 10px 0;
+  position: relative;
+}
+
+#back-bt p {
+  left: 26px;
+  top: 72px;
+  position: absolute;
+  width: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 5px 6px 7px 6px;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s;
+}
+#back-bt p:hover {
+  background-color: #E0E0E0;
+}
+
+.signup-form>fieldset {
+  border-style: solid;
+  border-color: #BDBDBD;  /*grey 400*/
+  border-width: 1px 0 1px 0;
+  margin: 8px auto 0px auto;
+  padding: 10px 20px 50px 20px;
+  font-size: 14px;
+  max-width: 540px;
+}
+.signup-form legend {
+  text-align: center;
+  color: #757575; /*grey 600*/
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0 10px;
+}
+
+/***** Radio input *****/
+.radio-wrapper {
+  width: 440px;
+  margin: 20px auto;
+}
+
+.radio-wrapper>p {
+  text-align: center;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+.radio-container {
+  display: inline-block;
+  position: relative;
+  height: 72px;
+  width: 80px;
+  margin: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.icon svg {
+  padding-top: 10px;
+  height: 32px;
+  width: 32px;
+}
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 78px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+/* Color setting */
+.radio-container.primer {
+  color: #607D8B; /*bluegrey 500*/
+} .primer .radio-mark {
+  background-color: rgba(255,255,255,0.4);
+  border: 1px dashed #607D8B;
+} .walk-icon svg {
+  fill: #607D8B;
+}
+
+.radio-container.beginner {
+  color: #FFC107; /*amber 500*/
+} .beginner .radio-mark {
+  background-color: rgba(255,255,255,0.4);
+  border: 1px dashed #FFC107;
+} .bike-icon svg {
+  fill: #FFC107;
+}
+
+.radio-container.challenger {
+  color: #2196F3; /*blue 500*/
+} .challenger .radio-mark {
+  background-color: rgba(255,255,255,0.4);
+  border: 1px dashed #2196F3;
+} .car-icon svg {
+  fill: #2196F3;
+}
+
+.radio-container.flyer {
+  color: #E91E63; /*pink 500*/
+} .flyer .radio-mark {
+  background-color: rgba(255,255,255,0.5);
+  border: 1px dashed #E91E63;
+} .fly-icon svg {
+  fill: #E91E63;
+}
+
+.radio-container.disciple {
+  color: #000; /*pink 500*/
+} .disciple .radio-mark {
+  background-color: rgba(255,255,255,0.5);
+  border: 1px dashed #000;
+} .school-icon svg {
+  fill: #000;
+}
+
+
+.radio-container:hover input ~ .radio-mark {
+  background-color: rgba(0,0,0,0.0);
+  border-style: solid;
+}
+
+.radio-container input:checked ~ .radio-mark {
+  background-color: rgba(0,0,0,0.0);
+  height: 66px;
+  width: 74px;
+  border-width: 3px;
+  border-style: solid;
+}
+/***** END Radio input *****/
+
+.input-wrapper {
+  position: relative;
+  padding-top: 10px;
+  line-height: 24px;
+}
+.input-wrapper p {
+  display: inline-block;
+  width: 140px;
+}
+.input-wrapper i {
+  font-size: 12px;
+  line-height: 1.2em;
+  display: inline-block;
+  padding-left: 140px;
+  width: calc(100% - 140px);
+  color: #E91E63;
+}
+.input-wrapper input {
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #BDBDBD;
+  width: calc(100% - 140px);
+  text-indent: 1em;
+  transition: box-shadow 0.3s;
+}
+.input-wrapper input:hover, .input-wrapper input:focus {
+  border-color: #00BFA5;
+  box-shadow: 0px 0px 1px #00BFA5 inset;
+}
+.input-wrapper span {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.signup-form div.input-wrapper:nth-of-type(5) {
+  padding-top: 0px;
+  margin-top: -1px;
+}
+.signup-form div.input-wrapper:nth-of-type(5) span {
+  top: 6px;
+}
+
+/***** Checkbox input *****/
+.checkbox-wrapper {
+  margin: 16px 0 8px 0;
+}
+.checkbox-wrapper>p {
+  display: inline-block;
+  width: 140px;
+}
+
+.checkbox-wrapper>label:nth-of-type(3){
+  margin-right: 0;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  height: 34px;
+  width: calc((100% - 156px) / 3);
+  margin-right: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox button */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: 0;    
+  height: 32px;
+  width: calc(100% - 2px);
+  border-radius: 8px;
+  border: 1px dashed #00BFA5;
+  background-color: rgba(255,255,255,0.5);
+  transition: all 0.3s;
+}
+.checkbox-container:hover input ~ .checkbox-mark {
+  height: 32px;
+  width: calc(100% - 2px);
+  border: 1px solid #00BFA5;
+  background-color: rgba(255,255,255,0.0);
+}
+.checkbox-container input:checked ~ .checkbox-mark {
+  height: 30px;
+  width: calc(100% - 4px);
+  border: 2px solid #00BFA5;
+  background-color: rgba(255,255,255,0.0);
+}
+/***** END Checkbox input *****/
+
+.button-container {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 40px;
+  border-top: 1px solid #E0E0E0;
+}
+.button-container>button {
+  display: block;
+  background-color: #00BFA5;
+  margin: auto;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid #00BFA5;
+  width: 240px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.button-container>button:hover {
+  background-color: #fff;
+  border: 1px solid #00BFA5;
+  color: #00BFA5;
+}
+
+.button-container>button:disabled {
+  background-color: #E0E0E0;
+  border: 1px solid #F5F5F5;
+  color: #fff;
+}
+
+.button-container>button:disabled:hover {
+  background-color: #F5F5F5;
+}
+
+@media (max-width: 540px) {
+  #back-bt p {
+    left: 12px;
+  }
+  .signup-form>fieldset {
+    margin: 8px 12px;
+  }
+  .radio-wrapper {
+    width: 264px;
+    margin: auto;
+  }
+
+  .input-wrapper p {
+    display: none;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+
+  .checkbox-wrapper>p {
+    width: 72px;
+  }
+  .checkbox-container {
+    width: calc((100% - 88px) / 3);
+  }
+  .input-wrapper i {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .checkbox-wrapper>p {
+    text-align: left;
+    width: 100%;
+    line-height: 32px;
+  }
+  .checkbox-container {
+    margin: 0 0 8px 0;
+    width: 100%;
+  }
+  .signup-form legend {
+    font-size: 12px;
+  }
+}

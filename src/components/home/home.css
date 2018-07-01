@@ -1,0 +1,103 @@
+#instafeed {
+  margin-top: 64px;
+}
+
+.instafeed__feeders {
+  background-color: #FAFAFA; /*grey 50*/
+  padding: 8px;
+  border-bottom: 1px solid #E0E0E0; /*grey 300*/
+}
+  .feeder_wrapper {
+    display: inline-block;
+    position: relative;
+    height: 86px;
+    width: 64px;
+    overflow: hidden;
+    margin-right: 8px;
+  }
+    .feeder_icon {
+      float: left;
+      width: 64px;
+      height: 64px;
+    }
+    .feeder_icon_mask {
+      position: absolute;
+      left: 0;
+      width: 64px;
+      height: 64px;
+      background-image: url("https://uploads.codesandbox.io/uploads/user/191fe0d6-4122-481d-8cff-755c18cc455e/Rcpd-mask_64g.png");
+      background-repeat: no-repeat;
+    }
+    .feeder_wrapper>p {
+      font-size: 0.8rem;
+      width: 100%;
+      text-align: center;
+    }
+
+.instafeed__item_wrapper {
+  min-width: 320px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+}
+
+  .instafeed__item__head {
+    width: calc(100% - 16px);
+    height: 36px;
+    padding: 8px 8px;
+  }
+    .instafeed__item__icon{
+      float: left;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #F5F5F5;
+      margin-top: 2px;
+      margin-right: 10px;
+    }
+    .instafeed__item__id {
+      float: left;
+      font-size: 0.92rem;
+      line-height: 1.2em;
+    }
+    .instafeed__item__location {
+      float: left;
+      font-size: 0.8rem;
+      line-height: 1.2em;
+    }
+
+/* insta a tag */
+  .instafeed__item {
+
+  }
+
+    /* insta img */
+    .instafeed__item__background {
+      width: 100%;
+    }
+
+    /* caption and etc overlay*/
+    .instafeed__item__overlay {
+      width: calc(100% - 16px);
+      padding: 8px 8px;
+    }
+      .instafeed__item__overlay--inner {
+        
+      }
+        .instafeed__item__caption {
+          font-size: 0.92rem;
+          line-height: 1.2em;
+        }
+
+@media (max-width: 540px){
+  .instafeed__item_wrapper {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0; /*grey 300*/
+    box-shadow: none;
+  }
+}
+/***** END instafeed *****/

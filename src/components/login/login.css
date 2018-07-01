@@ -1,0 +1,242 @@
+h1 {
+	font-family: 'Open Sans';
+	font-weight: normal;
+}
+
+.login-wrapper {
+}
+
+.login-container {
+  padding: 150px 0 102px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.login-head {
+  text-align: center;
+  height: 64px;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.login-head span {
+  float: left;
+  height: 100%;
+  border-style: solid;
+  border-color: #FFAB00;
+  width: 16px;
+}
+.login-head span:nth-child(1) {
+  border-width: 2px 0px 2px 2px;
+}
+.login-head span:nth-child(3) {
+  border-width: 2px 2px 2px 0px;
+}
+.login-head>div {
+  float: left;
+  width: 260px;
+}
+.login-head h1 {
+  font-size: 30px;
+}
+.login-head p{
+  line-height: 1.5em;
+}
+
+.login-img {
+  position: relative;
+  margin: auto;
+  width: 160px;
+  height: 160px;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/191fe0d6-4122-481d-8cff-755c18cc455e/Dry5-char.svg");
+}
+
+.mouse {
+  position: absolute;
+  top: 49%;
+  left: 37%;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 2px solid #00BFA5;
+  animation: talking 6s ease-in-out infinite;
+}
+
+@keyframes talking {
+  0% {
+    transform: rotateX(80deg);
+  }
+  3% {
+    transform: rotateX(90deg);
+  }
+  6% {
+    transform: rotateX(0deg);
+  }
+  9% {
+    transform: rotateX(85deg);
+  }
+  40% {
+    transform: rotateX(85deg);
+  }
+  43% {
+    transform: rotateX(0deg);
+  }
+  46% {
+    transform: rotateX(85deg);
+  }
+  85% {
+    transform: rotateX(85deg);
+  }
+  88% {
+    transform: rotateX(0deg);
+  }
+  90% {
+    transform: rotateX(80deg);
+  }
+}
+
+.login-form {
+  padding: 20px 0 8px 0;
+  margin: auto;
+  max-width: 300px;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+}
+
+.login-form input {
+  display: block;
+  width: calc(100% - 32px);
+  border: 1px solid #FFEA00;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  transition: all 0.3s ease;
+}
+
+.login-form input:hover, input:focus {
+  border: 1px solid #FFAB00;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.login-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  color: #9E9E9E;
+  opacity: 1; /* Firefox */
+} 
+.login-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  color: #9E9E9E;
+} 
+.login-form ::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  color: #9E9E9E;
+}
+
+.login-form button {
+  background-color: #00BFA5;
+  border: 1px solid #00BFA5;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #fff;
+  border: 1px solid #00BFA5;
+  color: #00BFA5;
+}
+
+.signup-container {
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
+  max-width: 300px;
+  margin: auto;
+}
+
+.signup {
+  text-align: left;
+  float: left;
+  width: 50%;
+  color: #00BFA5;
+}
+
+.find-account {
+  text-align: right;
+  float: right;
+  width: 50%;
+  color: #00BFA5;
+}
+
+.signup a:hover, .find-account a:hover {
+  font-weight: bold;
+  color: #00796B; /*teal 700*/
+}
+
+@media (max-width: 640px) {
+  .login-container {
+    padding: 100px 0 42px 0;
+  }
+}
+
+
+/* gradient */
+.gradient {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* end gradient */

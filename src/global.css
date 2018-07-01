@@ -1,0 +1,46 @@
+/* init */
+:focus{outline: none;}
+button{outline: none;}
+a, li {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: Arial;
+}
+body {
+  background-color: #FAFAFA; /*grey 50*/
+}
+
+.app-bar {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 3px 0;
+  background-color: #FAFAFA; /*grey 50*/
+  border-bottom: 1px solid #FFC107 /*amber 500*/
+}
+
+.app-bar .login-state{
+  text-align: center;
+  line-height: 1.6em;
+  color: #4DB6AC; /*teal 300*/
+}
+
+.signout {
+  float: right;
+  border: none;
+  border-radius: 8px;
+  margin: 8px 10px 0 0;
+  width: 72px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #fafafa;
+  color: #FFA000; /*amber 700*/
+  cursor: pointer;
+}
+.signout:hover {
+  background-color: #fff;
+}
